@@ -1,5 +1,6 @@
 html {
-  --color-background-400: rgb(113, 25, 226);
+  --color-background-400: rgb(122, 25, 241);
+  --color-background-800: rgb(51, 33, 121);
 
   --color-letter-100: white;
 
@@ -34,12 +35,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem 3.75rem;
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   box-sizing: border-box;
-  background-color: var(--color-background-400);
 }
 
 header ul {
@@ -61,4 +61,36 @@ header a {
 header nav a:hover {
   color: var(--color-primary-300);
   cursor: pointer;
+}
+
+#hero {
+  height: 50rem;
+  background: linear-gradient(
+    to bottom,
+    var(--color-background-400),
+    var(--color-background-800)
+  );
+}
+
+#hero-content {
+  width: 50%;
+  text-align: center;
+  padding: 3.125rem 0;
+  margin: 0 auto;
+  position: relative;
+  top: 12.5rem;
+}
+
+#hero-content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.125rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+#hero-content p {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
